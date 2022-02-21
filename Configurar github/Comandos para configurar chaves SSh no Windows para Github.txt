@@ -1,0 +1,18 @@
+# Criar chaves ssh
+ssh-keygen -t rsa -f "/c/Users/rafae/.ssh/github" -C 'rakenvi@gmail.com'
+
+# Quando fechar o terminal preciso executar isso
+eval "$(ssh-agent -s)"
+ssh-add /c/Users/rafae/.ssh/github
+
+# Iniciando o git
+git init
+git config --global user.name "rafaelkenne"
+git config --global user.email "rakenvi@gmail.com"
+git remote add origin git@github.com:git@github.com:rafaelkenne/ReactJS-Next.git
+
+# Editei
+git add .
+
+git commit -m 'Teste projeto 1'
+git push origin master

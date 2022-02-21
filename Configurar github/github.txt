@@ -1,0 +1,31 @@
+Entrar no repositorio via bash
+git config --global user.name "rafaelkenne"
+git config --global user.email "rakenvi@gmail.com"
+
+cd "\Desktop\ReactJs_NextJs"
+
+git init
+git status - //visualizar arquivos que não estão adicionados no repositorio
+git add .
+git commit -m "ReactJs e NextJs" //comentario 
+git branch -M main
+git remote add origin https://github.com/rafaelkenne/ReactENext.git
+git push -u origin main
+
+
+
+
+Caso de erro:
+Faça um novo repositório e envie o código existente novamente para o novo repositório
+
+git init não inicializa se você já tiver uma pasta .git/ em seu repositório. Então, para o seu caso, faça -
+
+(1) rm -rf .git/
+
+(2) git init
+
+(3) git remote add origin  https://repository.remote.url 1,2 mil
+
+(4) git commit -m “Mensagem de confirmação”
+
+(5) git push -f origin master

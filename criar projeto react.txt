@@ -1,0 +1,10 @@
+npx create-react-app .
+
+//instalar prettier
+npm i -D prettier eslint-config-prettier eslint-plugin-prettier 
+
+//ajustar todos arquivos js
+npx eslint src/**/*.js --fix
+
+//importar prop types
+npm i prop-types
